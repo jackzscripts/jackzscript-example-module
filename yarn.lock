@@ -32,7 +32,7 @@ graceful-fs@^4.2.4:
 
 "gta-lua-types@https://github.com/Jackzmc/gta-lua-types":
   version "1.0.0"
-  resolved "https://github.com/Jackzmc/gta-lua-types#bdf10deed89015817b400a4fee8703e23286590e"
+  resolved "https://github.com/Jackzmc/gta-lua-types#cb5342257ef4dbd3b2ddbbc74bd870085352b35e"
 
 has@^1.0.3:
   version "1.0.3"

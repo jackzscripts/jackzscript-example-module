@@ -1,28 +1,26 @@
+import * as JackzscriptModule from "./jackzscript.module"
 
-const ModuleInfo: ModuleInfo = {
+export const ModuleInfo: JackzscriptModule.ModuleInfo = {
     Name: "TypescriptModule",
     Version: "1.0.0",
     Description: "An example typescript to lua module"
 }
 
-const Libraries: ModuleLibraries = {
+export const Libraries: JackzscriptModule.ModuleLibraries = {
     jackzvehiclelib: {
         SourceUrl: "https://jackz.me/stand/get-lua.php?script=jackzvehiclelib&branch=%branch%",
         Version: "0.1.0",
     }
 }
 
-const Resources: ModuleResources = {
+export const Resources: JackzscriptModule.ModuleResources = {
     vehicles: {
         SourceUrl: "https://jackz.me/stand/resources/vehicles.txt",
-        Version: "0.1.0"
+        Version: "0.1.0",
     }
 }
 
-export default class MyModule extends Module {
-    ModuleInfo = ModuleInfo
-    Libraries = Libraries
-    Resources = Resources
+export default class MyModule implements JackzscriptModule.Module {
     /**
      * Optional. Called when module is starting up, and plugin can take action
      *
@@ -63,7 +61,7 @@ export default class MyModule extends Module {
      * @param {number} tick An increasing tick number
      */
     OnTick(tick: number) {
-
+        util.draw_debug_text("ts module " + tick)
     }
 
 

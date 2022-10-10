@@ -4,12 +4,14 @@
     "license": "MIT",
     "devDependencies": {
         "@types/node": "^18.8.2",
-        "gta-lua-types": "https://github.com/Jackzmc/gta-lua-types",
+        "gta-lua-types": "https://github.com/jackzscripts/gta-lua-types",
         "lua-types": "^2.13.0",
         "typescript": "^4.8.4",
         "typescript-to-lua": "^1.10.1"
     },
     "scripts": {
-        "build": "tstl"
+        "build": "tstl",
+        "dev": "tstl --watch",
+        "update": "yarn add https://github.com/jackzscripts/gta-lua-types -D"
     }
 }
